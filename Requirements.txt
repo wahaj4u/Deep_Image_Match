@@ -1,6 +1,6 @@
 streamlit
 numpy
-opencv-python-headless==4.5.5.64 # Use this for environments without GUI support
+opencv-python-headless # Use this for environments without GUI support
 pandas
 requests
 scikit-learn
