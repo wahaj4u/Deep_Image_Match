@@ -1,8 +1,6 @@
-streamlit
-numpy
-opencv-python-headless # Use this for environments without GUI support
+opencv-python-headless
+tensorflow
 pandas
+numpy
 requests
 scikit-learn
-tensorflow
-matplotlib
