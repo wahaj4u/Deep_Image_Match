@@ -2,7 +2,7 @@ import os
 import requests
 import numpy as np
 import pandas as pd
-import cv2
+import cv2  # Ensure OpenCV is installed in Colab
 from sklearn.metrics.pairwise import cosine_similarity
 from tensorflow.keras.applications.vgg16 import VGG16, preprocess_input
 from tensorflow.keras.preprocessing import image
