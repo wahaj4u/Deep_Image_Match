@@ -4,13 +4,6 @@ import pandas as pd
 import numpy as np
 import cv2
 
-
-# Pre-load VGG16 model
-@st.cache_resource
-def load_model():
-    base_model = VGG16(weights='imagenet', include_top=False, input_shape=(224, 224, 3))
-    return Model(inputs=base_model.input, outputs=base_model.output)
-
 # Load the model
 model = load_model()
 
