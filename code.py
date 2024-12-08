@@ -4,8 +4,6 @@ import pandas as pd
 import numpy as np
 import cv2
 
-# Load the model
-model = load_model()
 
 # Function to extract features using VGG16
 def extract_features(img_path):
