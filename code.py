@@ -3,7 +3,21 @@ import requests
 import pandas as pd
 import numpy as np
 import cv2
+from sklearn.metrics.pairwise import cosine_similarity
+from sklearn.cluster import KMeans
+from tensorflow.keras.applications.vgg16 import VGG16, preprocess_input
+from tensorflow.keras.preprocessing import image
+from tensorflow.keras.models import Model
+import streamlit as st
 
+# Pre-load VGG16 model
+@st.cache_resource
+def load_model():
+    base_model = VGG16(weights='imagenet', include_top=False, input_shape=(224, 224, 3))
+    return Model(inputs=base_model.input, outputs=base_model.output)
+
+# Load the model
+model = load_model()
 
 # Function to extract features using VGG16
 def extract_features(img_path):
@@ -65,7 +79,7 @@ st.title("Image Similarity Finder")
 DATASET_FOLDER = "dataset"
 
 # Download dataset
-SHEET_ID = '1Da6skafg4wATw04fh_gAJa5HHbXRdv-5G06OwQ8mJsI'
+SHEET_ID = '121aV7BjJqCRlFcVegbbhI1Zmt67wG61ayRiFtDnafKY'
 download_images_from_sheet(SHEET_ID, DATASET_FOLDER)
 
 # Prepare dataset
