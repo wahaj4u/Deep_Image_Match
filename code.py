@@ -5,9 +5,17 @@ import pandas as pd
 import cv2
 import streamlit as st
 from sklearn.metrics.pairwise import cosine_similarity
-from tensorflow import VGG16, preprocess_input
-from tensorflow import image
-from tensorflow import Model
+from sklearn.metrics.pairwise import cosine_similarity
+from tensorflow.keras.applications import VGG16, preprocess_input
+from tensorflow.keras.preprocessing import image
+from tensorflow.keras.models import Model
+
+@st.cache_resource
+def load_model():
+    base_model = VGG16(weights='imagenet', include_top=False, input_shape=(224, 224, 3))
+    return Model(inputs=base_model.input, outputs=base_model.output)
+model = load_model()
+
 
 # App title
 st.title("Streamlit Sample App: Image Uploader")
