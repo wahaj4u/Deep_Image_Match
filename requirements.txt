@@ -2,6 +2,6 @@ streamlit
 pandas
 numpy
 requests
-scikit-learn==1.2.2  # Choose a compatible version for Python 3.10
-tensorflow==2.11.0   # Adjust to a specific version if needed
+tensorflow==2.11.0  # Try this specific version for compatibility with Python 3.10
 opencv-python-headless
+scikit-learn==1.2.2  # Use a specific version compatible with Python 3.10
