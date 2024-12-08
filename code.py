@@ -4,7 +4,6 @@ import numpy as np
 import requests
 import pandas as pd
 import cv2  # Ensure OpenCV is installed in Colab
-from sklearn import cosine_similarity
 from tensorflow.keras.applications import VGG16, preprocess_input
 from tensorflow.keras.preprocessing import image
 from tensorflow.keras.models import Model
