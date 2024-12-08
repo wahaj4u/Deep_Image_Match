@@ -3,5 +3,5 @@ pandas
 numpy
 requests
 scikit-learn
-tensorflow
+tensorflow==2.10.2
 opencv-python-headless
