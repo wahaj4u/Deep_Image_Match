@@ -8,7 +8,6 @@ from sklearn.cluster import KMeans
 from tensorflow.keras.applications.vgg16 import VGG16, preprocess_input
 from tensorflow.keras.preprocessing import image
 from tensorflow.keras.models import Model
-import cv2
 
 print("All libraries are successfully imported!")
 
