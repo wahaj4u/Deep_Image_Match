@@ -1,8 +1,7 @@
 streamlit
-numpy
-opencv-python-headless  # Use this for environments without GUI support
 pandas
+numpy
 requests
-scikit-learn
-tensorflow
-matplotlib
+scikit-learn==1.2.2
+tensorflow==2.10.1
+opencv-python-headless
