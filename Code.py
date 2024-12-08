@@ -3,8 +3,6 @@ import requests
 import pandas as pd
 import numpy as np
 import streamlit as st
-from tensorflow.keras.preprocessing import image
-from tensorflow.keras.models import model
 
 print("All libraries are successfully imported!")
 
