@@ -2,15 +2,12 @@ import os
 import requests
 import pandas as pd
 import numpy as np
-import streamlit as st
+import cv2
 from sklearn.metrics.pairwise import cosine_similarity
-from sklearn.cluster import KMeans
-from tensorflow.keras.applications.vgg16 import VGG16, preprocess_input  # Import VGG16 and preprocess_input
-from tensorflow.keras.preprocessing import image  # Import image preprocessing utilities
-from tensorflow.keras.models import Model  # Import Model for defining feature extractor
-import cv2  # Ensure OpenCV is imported for image processing
-
-print("All libraries are successfully imported!")
+from tensorflow.keras.applications.vgg16 import VGG16, preprocess_input
+from tensorflow.keras.preprocessing import image
+from tensorflow.keras.models import Model
+import streamlit as st
 
 # Streamlit UI
 st.title("Image Similarity Finder")
@@ -77,7 +74,7 @@ def prepare_dataset(folder):
 
 # Main Functionality
 # Download dataset
-SHEET_ID = '121aV7BjJqCRlFcVegbbhI1Zmt67wG61ayRiFtDnafKY'
+SHEET_ID = '1Da6skafg4wATw04fh_gAJa5HHbXRdv-5G06OwQ8mJsI'
 download_images_from_sheet(SHEET_ID, DATASET_FOLDER)
 
 # Prepare dataset
