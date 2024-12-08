@@ -7,7 +7,8 @@ import cv2  # Ensure OpenCV is installed in Colab
 from tensorflow.keras.applications import VGG16, preprocess_input
 from tensorflow.keras.preprocessing import image
 from tensorflow.keras.models import Model
-
+from sklearn.metrics.pairwise import cosine_similarity
+from sklearn.cluster import KMeans
 
 # App title
 st.title("Streamlit Sample App: Image Uploader")
