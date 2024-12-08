@@ -1,3 +1,8 @@
+!apt-get update
+!apt-get install -y libopencv-dev python3-opencv
+!pip install streamlit pandas requests scikit-learn tensorflow
+
+
 import streamlit as st
 import pandas as pd
 from PIL import Image
