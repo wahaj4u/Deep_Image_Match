@@ -3,6 +3,6 @@ numpy
 opencv-python-headless  # Use this for environments without GUI support
 pandas
 requests
-scikit-learn==1.2.2
-tensorflow==2.10.1
+scikit-learn
+tensorflow
 matplotlib
