@@ -1,7 +1,7 @@
 import streamlit as st
 from PIL import Image
 import numpy as np
-mport requests
+import requests
 import pandas as pd
 import cv2  # Ensure OpenCV is installed in Colab
 from sklearn.metrics.pairwise import cosine_similarity
