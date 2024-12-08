@@ -1,9 +1,6 @@
 import streamlit as st
 from PIL import Image
 import numpy as np
-import os
-import requests
-import pandas as pd
 
 
 # App title
