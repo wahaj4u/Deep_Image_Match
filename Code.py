@@ -1,6 +1,5 @@
 import os
 import requests
-from PIL import Image
 from sklearn.metrics import cosine_similarity
 from tensorflow.keras.applications.vgg16 import VGG16, preprocess_input
 from tensorflow.keras.preprocessing import image
