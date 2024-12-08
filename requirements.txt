@@ -1,7 +1,8 @@
 streamlit
-pandas
 numpy
+opencv-python-headless  # Use this for environments without GUI support
+pandas
 requests
-scikit-learn==1.2.2  # Compatible with Python 3.10
-tensorflow==2.9.1    # The latest TensorFlow compatible with Python 3.10
-opencv-python-headless
+scikit-learn==1.2.2
+tensorflow==2.10.1
+matplotlib
